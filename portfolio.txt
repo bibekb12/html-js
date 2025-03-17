@@ -6,4 +6,4 @@
       http-equiv="refresh"
       content="0; url=https://www.bibekbhandari.com.np"
     />
-    <h2>my portfolio</h2>
+    <h2>bibek bhandari</h2>
