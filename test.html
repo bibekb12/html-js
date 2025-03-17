@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript</h2>
+
+    <p>
+      When adding a number and a string, JavaScript will treat the number as a
+      string.
+    </p>
+
+    <p id="demo"></p>
+    <p id="test"></p>
+
+    <script>
+      // let x = myFunction(10, 3);
+      // let x = toCelsius(77);
+
+      // function myFunction(a, b) {
+      //   return a * b;
+      // }
+
+      // function toCelsius(fahrenheit) {
+      //   return (5 / 9) * (fahrenheit - 32);
+      // }
+
+      // document.getElementById("demo").innerHTML = "Result " + x;
+      // function myFunction() {
+      //   let carName = "Volvo";
+      //   document.getElementById("demo").innerHTML = carName;
+      // }
+      // let name = myFunction();
+      // let car = "BMW";
+      // document.getElementById("demo").innerHTML = car;
+      // const car = { type: "fiat", model: "500", color: "green" };
+      // document.getElementById("demo").innerHTML = car.type;
+      // document.getElementById("test").innerHTML = car.model;
+
+      //create an object
+      // const person = {};
+      // const person = new Object();
+
+      // //Add properties
+      // person.firstName = "bibek";
+      // person.lastName = "bhandari";
+      // person.age = 110;
+      // person.eyeColor = "blue";
+      // document.getElementById("demo").innerHTML =
+      //   //   person.firstName + " is " + person.age + " years old.";
+      //   person["eyeColor"];
+
+      //Create object
+      const person = {
+        firstName: "bibek",
+        lastName: "bhandari",
+        height: 50,
+      };
+
+      const x = person;
+      console.log(x.height);
+      console.log(x["firstName"]);
+      x.height = 100;
+      document.getElementById("demo").innerHTML = x.height;
+
+      delete x.height;
+      console.log(x.height);
+      x.height = 88;
+      console.log(x.height);
+      console.log(x["height"]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function myFunction1() {
+        document.getElementById("demo").innerHTML = "My first javascript";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Demo JavaScript in head</h2>
+    <p id="demo">A paragraph</p>
+    <button type="button" onclick="myFunction1()">Try function</button>
+    <h2>Demo JavaScript in Body</h2>
+
+    <button type="button" onclick="myFunction2()">Try it</button>
+    <h2>calling js function from external file</h2>
+
+    <button type="button" onclick="myFunction()">
+      Called js from external
+    </button>
+
+    <script>
+      function myFunction2() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+    <script src="myScript.js"></script>
+  </body>
+</html>

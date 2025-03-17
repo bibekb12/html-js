@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //create an object
+      const person = {
+        firstName: "bibek",
+        lastName: "bhandari",
+        age: 50,
+        language: "yes",
+      };
+
+      //Add property
+      Object.defineProperty(person, "year", { value: "2025" });
+
+      //change a property
+      Object.defineProperty(person, "language", { value: "no" });
+
+      //display
+      document.writeln(person.year);
+      document.writeln(person.language);
+    </script>
+  </body>
+</html>

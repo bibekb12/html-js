@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      //constructor function for Person objects
+      function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        this.fullName = function () {
+          return this.firstName + this.lastName;
+        };
+      }
+      //create a Person object
+      const myMother = new Person("my", "mother", 54, "green");
+      document.getElementById("demo").innerHTML =
+        "aama ko naam: " + myMother.fullName();
+    </script>
+  </body>
+</html>

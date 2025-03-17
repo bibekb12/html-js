@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //create targe object
+      const person1 = {
+        firstName: "bibek",
+        lastName: "bhandari",
+        age: 30,
+        eyeColor: "brown",
+      };
+
+      //create source object
+      const person2 = {
+        firstName: "Alish",
+        lastName: "Tudu",
+      };
+
+      //Assign source to target
+      Object.assign(person1, person2);
+
+      //display the target
+      document.writeln(Object.entries(person1));
+    </script>
+  </body>
+</html>

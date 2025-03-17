@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        constructor(brand) {
+          this.carName = brand;
+        }
+        get cnam() {
+          return this.carName;
+        }
+        set cnam(x) {
+          this.carName = x;
+        }
+      }
+
+      const myCar = new Car("FOrd");
+      document.writeln(myCar.cnam);
+    </script>
+  </body>
+</html>

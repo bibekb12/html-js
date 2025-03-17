@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "bibek",
+        lastName: "bhandari",
+        age: 50,
+      };
+
+      //seal object
+      Object.seal(person);
+
+      //Test error
+      let text = "";
+      try {
+        delete person.age;
+        text = Object.values(person);
+      } catch (err) {
+        text = err;
+      }
+      document.writeln(text);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-obj-method</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const person = {
+        firstName: "bibek",
+        lastName: "bhandari",
+        id: 5555,
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      person.name = function () {
+        return this.firstName + this.lastName;
+      };
+      document.getElementById("demo").innerHTML = person.name();
+    </script>
+  </body>
+</html>
